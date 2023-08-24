@@ -13,13 +13,25 @@
     margin 1.4rem 0
     color var(--text-color-3)
     background var(--background-color-2)
-    border-left 0.4rem solid var(--text-color-4)
+    border-left 0.25rem solid var(--text-color-4)
+  }
+
+  hr {
+    box-sizing content-box
+    height 0.25em
+    margin 24px 0
+    padding 0
+    overflow hidden
+    background transparent
+    background-color #d0d7de
+    border 0
+    border-bottom 1px solid #d8dee4
   }
 
 
   p {
     color var(--text-color-3)
-    line-height 2
+    line-height 1.5
   }
 
 
@@ -127,14 +139,15 @@
   h6 {
     position relative
     box-sizing border-box
+    margin-top 24px
+    margin-bottom 16px
     padding-top 0.4rem
     padding-bottom 0.2rem
     overflow hidden
     color var(--text-color-2)
-    line-height 1.5
+    line-height 1.25
     white-space nowrap
     text-overflow ellipsis
-    border-bottom 1px solid var(--post-h-bottom-border-color)
 
     +keep-tablet() {
       line-height 1.25
@@ -175,7 +188,7 @@
   h1 {
     font-weight 600
     font-size 1.8rem
-
+    border-bottom 1px solid var(--post-h-bottom-border-color)
     +keep-tablet() {
       font-size 1.7rem
     }
@@ -185,6 +198,7 @@
   h2 {
     font-weight 600
     font-size 1.7rem
+    border-bottom 1px solid var(--post-h-bottom-border-color)
 
     +keep-tablet() {
       font-size 1.6rem
